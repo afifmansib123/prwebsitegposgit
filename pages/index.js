@@ -17,7 +17,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.description}>
           <p>
-            My nme is Tanat and i just created a new branch
+            THIS IS THE FRESHEST VERSION
             <code className={styles.code}>mansib chow</code>
           </p>
           <div>
