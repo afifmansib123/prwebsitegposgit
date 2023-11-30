@@ -4,7 +4,11 @@
 
 @media (max-width: 768px) {
     * {
+<<<<<<< HEAD
+      font-size: 8px;
+=======
       font-size: 15px;
+>>>>>>> c59c6babad3f8d3f420d620f6066a199ecc56020
        
     }
     .h1 {
