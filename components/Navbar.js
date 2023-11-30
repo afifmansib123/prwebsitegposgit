@@ -1,12 +1,13 @@
 // components/Navbar.js
 
+import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="bg-white p-4" style={{height: "30px"}}>
+    <nav className="bg-gray-800 p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="flex items-center ">
+        <div className="flex items-center">
           {/* Add your logo here */}
           <img
             src="/logo.png"
@@ -18,12 +19,16 @@ const Navbar = () => {
         </div>
         {/* Add your navigation links here */}
         <div className="space-x-4">
-        <div className="flex justify-center items-center rounded-2xl p-4" style={{ backgroundColor: "#f47322" }}>
-          <a href="#" className="text-white">
-          ติดต่อพนักงานขาย
-          </a>
+          <Link href="#contact-form-section">
+            <button
+              className="flex justify-center items-center rounded-2xl p-4 text-white"
+              style={{ backgroundColor: "#f47322" }}
+              type="button"
+            >
+              ติดต่อพนักงานขาย
+            </button>
+          </Link>
         </div>
-      </div>
       </div>
     </nav>
   );
