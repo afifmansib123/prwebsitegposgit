@@ -2,6 +2,7 @@
 
 import React from "react";
 import Navbar from "../components/Navbar";
+import Image from "next/image";
 
 const Home = () => {
   return (
@@ -9,7 +10,12 @@ const Home = () => {
       <Navbar />
       <div className="container mx-auto p-4">
         {/* Your main content goes here */}
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Next.js App</h1>
+        <div className="flex justify-center items-center rounded-3xl mb-5" style={{height: 80 }}>
+          
+        </div>
+        <div className="flex justify-center">
+          <Image src="/logo.png" alt="myname" height="800" width="1200"></Image>
+        </div>
         {/* Add more content as needed */}
       </div>
     </div>
