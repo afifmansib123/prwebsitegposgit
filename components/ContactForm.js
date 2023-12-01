@@ -1,18 +1,12 @@
 // components/ContactForm.js
-
 import React, { useState } from "react";
+import axios from "axios";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
-    surname: "",
     phoneNumber: "",
-    secondaryPhoneNumber: "",
-    lineId: "",
-    state: "",
-    province: "",
-    reason: "",
-    posModel: "",
+    businesstype: "",
     howDidYouKnow: "",
   });
 
@@ -23,9 +17,12 @@ const ContactForm = () => {
     });
   };
 
-  const handleSubmit = () => {
-    // For now, just show a popup message
-    alert(JSON.stringify(formData));
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    axios.post('https://sheet.best/api/sheets/9a963e18-cfce-4ccd-8626-97a568dfe958', formData).then((response)=>{
+            console.log(response)
+            setFormData({})
+        })
   };
 
   return (
@@ -78,39 +75,6 @@ const ContactForm = () => {
             className="flex-1 rounded-l-md p-2"
           />
         </div>
-        {/* Row 4 */}
-        <div className="mb-2">
-          <select
-            name="reason"
-            value={formData.reason}
-            onChange={handleInputChange}
-            className="w-full rounded-md p-2"
-          >
-            <option value="" disabled selected>
-              What are you contacting us for?
-            </option>
-            <option value="sales">Sales</option>
-            <option value="support">Support</option>
-            {/* Add more options as needed */}
-          </select>
-        </div>
-        {/* Row 5 */}
-        <div className="mb-2">
-          <select
-            name="posModel"
-            value={formData.posModel}
-            onChange={handleInputChange}
-            className="w-full rounded-md p-2"
-          >
-            <option value="" disabled selected>
-              Which model of POS do you want?
-            </option>
-            <option value="model1">Model 1</option>
-            <option value="model2">Model 2</option>
-            {/* Add more options as needed */}
-          </select>
-        </div>
-        {/* Row 6 */}
         <div className="mb-2">
           <select
             name="howDidYouKnow"
@@ -121,8 +85,13 @@ const ContactForm = () => {
             <option value="" disabled selected>
               Where Did You Know About GPOS
             </option>
-            <option value="advertisement">Advertisement</option>
-            <option value="referral">Referral</option>
+            <option value="Facebook">Facebook</option>
+            <option value="Event">Event</option>
+            <option value="Youtube">Youtube</option>
+            <option value="Website">Website</option>
+            <option value="Tiktok">Tiktok</option>
+            <option value="Instagram">Instagram</option>
+            <option value="LinkedIn">LinkedIn</option>
             {/* Add more options as needed */}
           </select>
         </div>
