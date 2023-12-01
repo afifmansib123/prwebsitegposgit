@@ -25,20 +25,20 @@ const ContactForm = () => {
 
   const handleSubmit = () => {
     // For now, just show a popup message
-    alert("Done!");
+    alert(JSON.stringify(formData));
   };
 
   return (
     <div
       id="contact-form-section"
-      className="rounded-3xl p-4 text-white mt-10 text-center"
+      className="rounded-2xl p-4 text-black mt-80 text-center flex-auto mb-11"
       style={{ backgroundColor: "#f47322" }}
     >
       <h2 className="text-2xl font-bold mb-2">Fill the form to contact</h2>
       <p>We will contact you back soon</p>
-      <form className="mt-4">
+      <form className="mt-4 mb-2">
         {/* Row 1 */}
-        <div className="flex mb-4">
+        <div className="flex mb-2">
           {" "}
           {/* Increased margin-bottom */}
           <input
@@ -47,8 +47,14 @@ const ContactForm = () => {
             value={formData.name}
             onChange={handleInputChange}
             placeholder="Name-Surname"
-            className="flex-1 rounded-l-md p-2 mr-2"
+            className="flex-1 rounded-l-md p-2"
           />
+          
+        </div>
+        {/* Row 2 */}
+        <div className="flex mb-2">
+          {" "}
+          {/* Increased margin-bottom */}
           <input
             type="tel"
             name="phoneNumber"
@@ -57,46 +63,18 @@ const ContactForm = () => {
             placeholder="Phone Number"
             className="flex-1 rounded-l-md p-2"
           />
-        </div>
-        {/* Row 2 */}
-        <div className="flex mb-4">
-          {" "}
-          {/* Increased margin-bottom */}
-          <input
-            type="tel"
-            name="secondaryPhoneNumber"
-            value={formData.secondaryPhoneNumber}
-            onChange={handleInputChange}
-            placeholder="Secondary Phone Number"
-            className="flex-1 rounded-l-md p-2 mr-2"
-          />
-          <input
-            type="text"
-            name="lineId"
-            value={formData.lineId}
-            onChange={handleInputChange}
-            placeholder="Line ID"
-            className="flex-1 rounded-l-md p-2"
-          />
+          
         </div>
         {/* Row 3 */}
-        <div className="flex mb-4">
+        <div className="flex mb-2">
           {" "}
           {/* Increased margin-bottom */}
           <input
             type="text"
-            name="state"
-            value={formData.state}
+            name="businesstype"
+            value={formData.businesstype}
             onChange={handleInputChange}
-            placeholder="State"
-            className="flex-1 rounded-l-md p-2 mr-2"
-          />
-          <input
-            type="text"
-            name="province"
-            value={formData.province}
-            onChange={handleInputChange}
-            placeholder="Province"
+            placeholder="Business Type"
             className="flex-1 rounded-l-md p-2"
           />
         </div>
@@ -141,7 +119,7 @@ const ContactForm = () => {
             className="w-full rounded-md p-2"
           >
             <option value="" disabled selected>
-              How did you know about us?
+              Where Did You Know About GPOS
             </option>
             <option value="advertisement">Advertisement</option>
             <option value="referral">Referral</option>
