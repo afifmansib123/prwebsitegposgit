@@ -3,6 +3,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Image from "next/image";
+import KeyFeature from "@/components/KeyFeature";
 
 const Home = () => {
   return (
@@ -13,9 +14,10 @@ const Home = () => {
         <div className="flex justify-center items-center rounded-3xl mb-5" style={{height: 80 }}>
           
         </div>
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <Image src="/logo.png" alt="myname" height="800" width="1200"></Image>
-        </div>
+        </div> */}
+        <KeyFeature/>
         {/* Add more content as needed */}
       </div>
     </div>
