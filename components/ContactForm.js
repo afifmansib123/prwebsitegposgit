@@ -28,11 +28,11 @@ const ContactForm = () => {
   return (
     <div
       id="contact-form-section"
-      className="rounded-2xl p-4 text-black mt-80 text-center flex-auto mb-11"
+      className="rounded-2xl p-4 text-black text-center flex-auto"
       style={{ backgroundColor: "#f47322" }}
     >
-      <h2 className="text-2xl font-bold mb-2">Fill the form to contact</h2>
-      <p>We will contact you back soon</p>
+      <h2 className="text-3xl font-bold mb-2">แบบฟอร์มลงทะเบียน</h2>
+      <p className="text-lg">เพื่อให้พนักงานขายติดต่อกลับ</p>
       <form className="mt-4 mb-2">
         {/* Row 1 */}
         <div className="flex mb-2">
@@ -43,7 +43,7 @@ const ContactForm = () => {
             name="name"
             value={formData.name}
             onChange={handleInputChange}
-            placeholder="Name-Surname"
+            placeholder="ชื่อ-นามสกุล"
             className="flex-1 rounded-l-md p-2"
           />
           
@@ -57,7 +57,7 @@ const ContactForm = () => {
             name="phoneNumber"
             value={formData.phoneNumber}
             onChange={handleInputChange}
-            placeholder="Phone Number"
+            placeholder="เบอร์โทร"
             className="flex-1 rounded-l-md p-2"
           />
           
@@ -71,7 +71,7 @@ const ContactForm = () => {
             name="businesstype"
             value={formData.businesstype}
             onChange={handleInputChange}
-            placeholder="Business Type"
+            placeholder="ประเภทของธุรกิจ"
             className="flex-1 rounded-l-md p-2"
           />
         </div>
@@ -82,8 +82,8 @@ const ContactForm = () => {
             onChange={handleInputChange}
             className="w-full rounded-md p-2"
           >
-            <option value="" disabled selected>
-              Where Did You Know About GPOS
+            <option value="" disabled>
+              รู้จัก GPOS จากช่องทางไหน
             </option>
             <option value="Facebook">Facebook</option>
             <option value="Event">Event</option>
@@ -100,7 +100,7 @@ const ContactForm = () => {
           <button
             type="button"
             onClick={handleSubmit}
-            className="text-white rounded-md p-2 w-full" // Change button color
+            className="text-white rounded-md p-2 w-full mt-4" // Change button color
             style={{ backgroundColor: "blue" }}
           >
             Submit

@@ -6,44 +6,62 @@ import Image from "next/image";
 
 import ContactForm from "../components/ContactForm";
 
-
 const Home = () => {
   return (
-    <div>
+    <div className="flex flex-col">
       <Navbar />
-      <div className="flex flex-auto justify-center">
-      <Image src ="/test.jpeg"  alt = "hello" width={1000} height={1000}></Image>
-      
+      <div className="px-4">
+        <div className="flex flex-auto justify-center mt-4">
+          <Image
+            src="/pg-long.svg"
+            alt="hello"
+            width={2000}
+            height={1000}
+            loading="eager"
+          ></Image>
+        </div>
+        {/* <div className="flex flex-auto justify-center">
+          <Image
+            src="/column-2.png"
+            alt="hello"
+            width={1000}
+            height={1000}
+          ></Image>
+        </div>
+        <div className="flex flex-auto justify-center">
+          <Image
+            src="/column-3.png"
+            alt="hello"
+            width={1000}
+            height={1000}
+          ></Image>
+        </div>
+        <div className="flex flex-auto justify-center">
+          <Image
+            src="/column-4.png"
+            alt="hello"
+            width={1000}
+            height={1000}
+          ></Image>
+        </div> */}
+        <div className="container mx-auto p-4 px-28 mt-8">
+          {/* Your main content goes here */}
+          <div
+            className="flex justify-center items-center rounded-3xl"
+          >
+            {/* Add more content as needed */}
+            <ContactForm />
+          </div>
+        </div>
       </div>
-      <p className="flex justify-center text-xl font-bold" style={{color: "#FF6800"}}>Text 1 - 10 features down</p>
-      <div className="flex flex-auto justify-center mb-5">
-      <Image src ="/test.jpeg"  alt = "hello" width={1000} height={1000}></Image>
-      
-      </div>
-      <p className="flex justify-center text-xl font-bold" style={{color: "#FF6800"}}>Text 2 - 12 stores down</p>
-      <div className="flex flex-auto justify-center mb-5">
-      <Image src ="/test.jpeg"  alt = "hello" width={1000} height={1000}></Image>
-      
-      </div>
-      <p className="flex justify-center text-xl font-bold" style={{color: "#FF6800"}}>Text 3 - D2Plus Pic down</p>
-      <div className="flex flex-auto justify-center mb-5">
-      <Image src ="/test.jpeg"  alt = "hello" width={1000} height={1000}></Image>
-      
-      </div>
-      <div className="container mx-auto p-4 mb-11">
-        {/* Your main content goes here */}
-        <div
-          className="flex justify-center items-center rounded-3xl mt-24"
-          style={{ height: 80 }} 
-        >
-        {/* Add more content as needed */}
-        <ContactForm />
-
-      </div>
-    </div>
-    <div className="flex flex-auto justify-center mb-5 mt-96">
-      <Image src ="/footer.png"  alt = "hello" width={1200} height={300}></Image>
-      
+      <div className="flex flex-auto justify-center mt-6">
+        <Image
+          src="/bot03.svg"
+          alt="hello"
+          width={1200}
+          height={300}
+          loading="eager"
+        ></Image>
       </div>
     </div>
   );
