@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import Image from "next/image";
 
 import ContactForm from "../components/ContactForm";
+import Footer from "@/components/Footer";
 
 const Home = () => {
   return (
@@ -20,41 +21,16 @@ const Home = () => {
             loading="eager"
           ></Image>
         </div>
-        {/* <div className="flex flex-auto justify-center">
-          <Image
-            src="/column-2.png"
-            alt="hello"
-            width={1000}
-            height={1000}
-          ></Image>
-        </div>
-        <div className="flex flex-auto justify-center">
-          <Image
-            src="/column-3.png"
-            alt="hello"
-            width={1000}
-            height={1000}
-          ></Image>
-        </div>
-        <div className="flex flex-auto justify-center">
-          <Image
-            src="/column-4.png"
-            alt="hello"
-            width={1000}
-            height={1000}
-          ></Image>
-        </div> */}
-        <div className="container mx-auto p-4 px-28 mt-8">
+        <div className="container mx-auto p-4 px-16 mt-8">
           {/* Your main content goes here */}
-          <div
-            className="flex justify-center items-center rounded-3xl"
-          >
+          <div className="flex justify-center items-center rounded-3xl">
             {/* Add more content as needed */}
             <ContactForm />
           </div>
         </div>
       </div>
-      <div className="flex flex-auto justify-center mt-6">
+      <Footer />
+      {/* <div className="flex flex-auto justify-center mt-6">
         <Image
           src="/bot03.svg"
           alt="hello"
@@ -62,7 +38,7 @@ const Home = () => {
           height={300}
           loading="eager"
         ></Image>
-      </div>
+      </div> */}
     </div>
   );
 };
