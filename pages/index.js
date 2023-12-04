@@ -13,7 +13,7 @@ const Home = () => {
       <div className="px-4">
         <div className="flex flex-auto justify-center mt-4">
           <Image
-            src="/D1-01.jpg"
+            src="/salepage_master-01.jpg"
             alt="hello"
             width={2000}
             height={1000}
