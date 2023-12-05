@@ -6,9 +6,10 @@ import {
   faLine,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import lineQRCodeImage from '../public/L_gainfriends_2dbarcodes_BW.png'
 
 const Footer = () => (
-  <div className="grid grid-cols-[42%_2%_55%] bg-black text-white h-40 p-6 content-center justify-stretch lg:px-4">
+  <div className="grid grid-cols-[42%_2%_55%] bg-black text-white h-40 p-6 content-center justify-stretch lg:px-4 mt-4">
     <div className="flex flex-col">
       <div>
         <h1 className="text-2xl font-bold">ช่วงเวลาการติดต่อ</h1>
@@ -39,10 +40,8 @@ const Footer = () => (
         </div>
         <div>
           <Image
-            src="/L_gainfriends_2dbarcodes_BW.png"
-            className="float-right"
-            width='100'
-            height='100'
+            src={lineQRCodeImage}
+            className="float-right max-h-24 max-w-[6rem]"
           />
         </div>
       </div>

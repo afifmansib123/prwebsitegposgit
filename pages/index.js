@@ -6,6 +6,7 @@ import Image from "next/image";
 
 import ContactForm from "../components/ContactForm";
 import Footer from "@/components/Footer";
+import salePageImage from '../public/salepage_master-01.jpg'
 
 const Home = () => {
   return (
@@ -14,10 +15,8 @@ const Home = () => {
       <div className="px-4">
         <div className="flex flex-auto justify-center mt-4">
           <Image
-            src="/salepage_master-01.jpg"
-            alt="hello"
-            width={2000}
-            height={1000}
+            src={salePageImage}
+            alt=""
             loading="eager"
           ></Image>
         </div>
