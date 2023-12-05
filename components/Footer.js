@@ -9,7 +9,7 @@ import {
 import lineQRCodeImage from "../public/images/L_gainfriends_2dbarcodes_BW.png";
 
 const Footer = () => (
-  <div className="grid grid-cols-[47%_4%_49%] bg-black text-white content-center justify-stretch p-6 h-40 md:h-48 md:px-12 md:py-6 mt-6">
+  <div className="grid grid-cols-[47%_4%_49%] bg-black text-white content-center justify-stretch p-6 h-40 md:h-48 md:px-12 md:py-6 mt-6 lg:px-80 lg:h-40 lg:py-6">
     <div className="flex flex-col">
       <div>
         <h1 className="text-2xl md:text-3xl font-bold">ช่วงเวลาการติดต่อ</h1>
@@ -20,7 +20,7 @@ const Footer = () => (
         <p className="text-lg md:text-xl">เสาร์-อาทิตย์, วันหยุดนักขัตฤกษ์: 10:00-19:00 น.</p>
       </div>
     </div>
-    <view className="h-32 md:h-40 w-px bg-white mx-2 mr-6"></view>
+    <view className="h-32 md:h-40 lg:h-36 w-px bg-white mx-2 mr-6"></view>
     <div className="flex flex-col ml-4">
       <h1 className="text-2xl md:text-3xl font-bold">ช่องทางการในติดตามเรา</h1>
       <div className="grid grid-cols-2">

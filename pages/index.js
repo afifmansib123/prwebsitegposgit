@@ -12,9 +12,9 @@ import columnThree from '../public/images/column3.png';
 
 const Home = () => {
   return (
-    <div className={"flex flex-col"}>
+    <div className="flex flex-col">
       <Navbar />
-      <div className="px-4">
+      <div className="px-4 lg:px-96">
         <div className="flex flex-col flex-auto justify-center mt-4">
           {/* <Image src={salePageImage} alt="" loading="eager" placeholder="blur" priority={true}></Image> */}
           <Image src={columnOne} alt="" loading="eager" placeholder="blur" priority={true}/>
