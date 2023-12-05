@@ -6,7 +6,7 @@ import Image from "next/image";
 
 import ContactForm from "../components/ContactForm";
 import Footer from "@/components/Footer";
-import salePageImage from '../public/images/salepage_master-01.jpg';
+import salePageImage from "../public/images/salepage_master-01.jpg";
 
 const Home = () => {
   return (
@@ -14,11 +14,7 @@ const Home = () => {
       <Navbar />
       <div className="px-4">
         <div className="flex flex-auto justify-center mt-4">
-          <Image
-            src={salePageImage}
-            alt=""
-            loading="eager"
-          ></Image>
+          <Image src={salePageImage} alt="" loading="eager"></Image>
         </div>
         <div className="container mx-auto p-4 px-6 mt-8">
           {/* Your main content goes here */}
