@@ -28,6 +28,7 @@ const ContactForm = () => {
         console.log(response);
         setFormData({});
       });
+    alert('Thank You For Submitting')
   };
 
   return (
