@@ -34,7 +34,7 @@ const ContactForm = () => {
     <div
       id="contact-form-section"
       className="rounded-2xl p-4 text-black text-center flex-auto"
-      style={{ backgroundColor: "#ff5e00" }}
+      style={{ backgroundColor: "#ff7d28" }}
     >
       <h2 className="text-4xl font-bold mb-2 text-white my-2">แบบฟอร์มลงทะเบียน</h2>
       <p className="text-2xl text-white">
