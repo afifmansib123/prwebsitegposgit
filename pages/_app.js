@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import localFont from "@next/font/local";
+import localFont from "next/font/local";
 
 const sukhumvits = localFont({
   src: [
@@ -19,7 +19,9 @@ const sukhumvits = localFont({
 config.autoAddCss = false;
 
 export default function App({ Component, pageProps }) {
-  return <html lang="en" className={`${sukhumvits.variable} font-sans`}>
-    <Component {...pageProps} />
-  </html>;
+  return (
+    <div className={`${sukhumvits.variable} font-sans`}>
+      <Component {...pageProps} />
+    </div>
+  );
 }

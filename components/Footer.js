@@ -9,7 +9,7 @@ import {
 import lineQRCodeImage from '../public/images/L_gainfriends_2dbarcodes_BW.png'
 
 const Footer = () => (
-  <div className="grid grid-cols-[42%_2%_55%] bg-black text-white h-40 p-6 content-center justify-stretch lg:px-4 mt-4">
+  <div className="grid grid-cols-[42%_2%_55%] bg-black text-white h-40 p-6 content-center justify-stretch lg:px-12 mt-4">
     <div className="flex flex-col">
       <div>
         <h1 className="text-2xl font-bold">ช่วงเวลาการติดต่อ</h1>

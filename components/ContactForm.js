@@ -29,13 +29,13 @@ const ContactForm = () => {
     <div
       id="contact-form-section"
       className="rounded-2xl p-4 text-black text-center flex-auto"
-      style={{ backgroundColor: "#f47322" }}
+      style={{ backgroundColor: "#ff5e00" }}
     >
-      <h2 className="text-3xl font-bold mb-2">แบบฟอร์มลงทะเบียน</h2>
-      <p className="text-lg">เพื่อให้พนักงานขายติดต่อกลับ</p>
-      <form className="mt-4 mb-2">
+      <h2 className="text-4xl font-bold mb-2">แบบฟอร์มลงทะเบียน</h2>
+      <p className="text-2xl">กรุณากรอกข้อมูลเพื่อให้พนักงานขายติดต่อกลับ</p>
+      <form className="mt-4 mb-2 text-xl">
         {/* Row 1 */}
-        <div className="flex mb-2">
+        <div className="flex mb-4">
           {" "}
           {/* Increased margin-bottom */}
           <input
@@ -44,12 +44,12 @@ const ContactForm = () => {
             value={formData.name}
             onChange={handleInputChange}
             placeholder="ชื่อ-นามสกุล"
-            className="flex-1 rounded-l-md p-2"
+            className="flex-1 rounded-l-md p-4"
           />
           
         </div>
         {/* Row 2 */}
-        <div className="flex mb-2">
+        <div className="flex mb-4">
           {" "}
           {/* Increased margin-bottom */}
           <input
@@ -58,12 +58,12 @@ const ContactForm = () => {
             value={formData.phoneNumber}
             onChange={handleInputChange}
             placeholder="เบอร์โทร"
-            className="flex-1 rounded-l-md p-2"
+            className="flex-1 rounded-l-md p-4"
           />
           
         </div>
         {/* Row 3 */}
-        <div className="flex mb-2">
+        <div className="flex mb-4">
           {" "}
           {/* Increased margin-bottom */}
           <input
@@ -72,15 +72,15 @@ const ContactForm = () => {
             value={formData.businesstype}
             onChange={handleInputChange}
             placeholder="ประเภทของธุรกิจ"
-            className="flex-1 rounded-l-md p-2"
+            className="flex-1 rounded-l-md p-4"
           />
         </div>
-        <div className="mb-2">
+        <div className="mb-4">
           <select
             name="howDidYouKnow"
             value={formData.howDidYouKnow}
             onChange={handleInputChange}
-            className="w-full rounded-md p-2"
+            className="w-full rounded-md p-4"
           >
             <option value="" disabled>
               รู้จัก GPOS จากช่องทางไหน
@@ -100,7 +100,7 @@ const ContactForm = () => {
           <button
             type="button"
             onClick={handleSubmit}
-            className="text-white rounded-md p-2 w-full mt-4" // Change button color
+            className="text-white rounded-md p-4 w-full mt-4 text-2xl" // Change button color
             style={{ backgroundColor: "blue" }}
           >
             Submit

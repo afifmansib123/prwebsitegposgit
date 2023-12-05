@@ -11,21 +11,3 @@
       font-size: 8px;
   }
 }
-
-@font-face {
-  font-family: 'SukhumvitMedium';
-  src: local('SukhumvitMedium'), url('../public/fonts/SukhumvitSet-Medium.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'SukhumvitBold';
-  src: local('SukhumvitBold'), url('../public/fonts/SukhumvitSet-Bold.ttf') format('ttf');
-  font-weight: bold;
-  font-style: normal;
-}
-
-body {
-  font-family: 'SukhumvitMedium', sans-serif;
-}
