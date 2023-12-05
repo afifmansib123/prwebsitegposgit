@@ -20,7 +20,7 @@ const Home = () => {
             loading="eager"
           ></Image>
         </div>
-        <div className="container mx-auto p-4 px-16 mt-8">
+        <div className="container mx-auto p-4 px-6 mt-8">
           {/* Your main content goes here */}
           <div className="flex justify-center items-center rounded-3xl">
             {/* Add more content as needed */}
@@ -29,15 +29,6 @@ const Home = () => {
         </div>
       </div>
       <Footer />
-      {/* <div className="flex flex-auto justify-center mt-6">
-        <Image
-          src="/bot03.svg"
-          alt="hello"
-          width={1200}
-          height={300}
-          loading="eager"
-        ></Image>
-      </div> */}
     </div>
   );
 };
