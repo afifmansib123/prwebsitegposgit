@@ -92,6 +92,7 @@ const ContactForm = () => {
             </option>
             <option value="Facebook">Facebook</option>
             <option value="Event">Event</option>
+            <option value="Line">Line</option>
             <option value="Youtube">Youtube</option>
             <option value="Website">Website</option>
             <option value="Tiktok">Tiktok</option>
