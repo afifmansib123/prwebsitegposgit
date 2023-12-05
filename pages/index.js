@@ -21,7 +21,7 @@ const Home = () => {
           <Image src={columnTwo} alt="" loading="eager" placeholder="blur" priority={true}/>
           <Image src={columnThree} alt="" loading="eager" placeholder="blur" priority={true}/>
         </div>
-        <div className="container mx-auto p-4 px-6 mt-8">
+        <div className="container mx-auto mt-8">
           {/* Your main content goes here */}
           <div className="flex justify-center items-center rounded-3xl">
             {/* Add more content as needed */}
