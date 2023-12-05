@@ -7,14 +7,14 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <nav className="bg-gray-600 p-6">
+    <nav className="bg-gray-600 p-6 lg:px-80">
       <div className="container m-auto flex justify-between items-center">
         <div className="flex items-center">
           {/* Add your logo here */}
           <Image
             src={logoImage}
             alt="Logo"
-            className="h-24 w-24 object-contain"
+            className="h-24 w-24 lg:h-16 lg:w-16 object-contain"
           />
           <p className="text-orange-500 text-2xl font-bold ml-5">G</p>
           <p className="text-white text-2xl font-bold ml-1">POS</p>
