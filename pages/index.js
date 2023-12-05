@@ -14,7 +14,7 @@ const Home = () => {
       <Navbar />
       <div className="px-4">
         <div className="flex flex-auto justify-center mt-4">
-          <Image src={salePageImage} alt="" loading="eager"></Image>
+          <Image src={salePageImage} alt="" loading="eager" placeholder="blur" priority={true}></Image>
         </div>
         <div className="container mx-auto p-4 px-6 mt-8">
           {/* Your main content goes here */}
