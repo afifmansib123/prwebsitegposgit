@@ -6,11 +6,11 @@ import Image from "next/image";
 
 import ContactForm from "../components/ContactForm";
 import Footer from "@/components/Footer";
-import salePageImage from '../public/salepage_master-01.jpg'
+import salePageImage from '../public/images/salepage_master-01.jpg';
 
 const Home = () => {
   return (
-    <div className="flex flex-col">
+    <div className={"flex flex-col"}>
       <Navbar />
       <div className="px-4">
         <div className="flex flex-auto justify-center mt-4">
