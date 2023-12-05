@@ -6,7 +6,7 @@ import {
   faLine,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-import lineQRCodeImage from '../public/images/L_gainfriends_2dbarcodes_BW.png'
+import lineQRCodeImage from "../public/images/L_gainfriends_2dbarcodes_BW.png";
 
 const Footer = () => (
   <div className="grid grid-cols-[42%_2%_55%] bg-black text-white h-40 p-6 content-center justify-stretch lg:px-12 mt-4">
