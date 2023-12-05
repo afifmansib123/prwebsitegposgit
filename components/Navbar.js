@@ -2,8 +2,9 @@
 // components/Navbar.js
 
 import Link from "next/link";
-
 import React from "react";
+import logoImage from '../public/images/logo.png';
+import Image from "next/image";
 
 const Navbar = () => {
   return (
@@ -11,8 +12,8 @@ const Navbar = () => {
       <div className="container m-auto flex justify-between items-center">
         <div className="flex items-center">
           {/* Add your logo here */}
-          <img
-            src="/logo.png"
+          <Image
+            src={logoImage}
             alt="Logo"
             className="h-24 w-24 object-contain"
           />
